@@ -21,3 +21,5 @@ import {getFirestore, doc, setDoc, getDoc } from "https://www.gstatic.com/fireba
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const db = getFirestore(app);
+
+if (doc) alert (true);
