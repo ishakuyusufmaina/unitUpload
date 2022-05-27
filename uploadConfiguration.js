@@ -150,5 +150,10 @@ class UploadForm {
 
 
 let root = document.getElementById("root");
-up = new UploadForm();
-root.innerHTML =up.root;
+let up = new UploadForm();
+
+root.appendChild(up.root);
+  up.unitInput.style.border="0.02px black solid";
+  up.unitInput.style.padding="10px";
+  up.submitBtn.classList.add("btn-primary");
+  
