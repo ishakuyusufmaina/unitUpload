@@ -1,5 +1,5 @@
  // Import the functions you need from the SDKs you need
-alert("The top");
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js";
 import {getFirestore, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js";
