@@ -23,8 +23,12 @@
   
   <script>
   let up = new UploadForm();
+    try{
   alert(db);
   alert(doc);
+      } catch (e){
+        alert(e.toString());
+        }
   root.appendChild(up.root);
   up.unitInput.style.border="0.02px black solid";
   up.unitInput.style.padding="10px";
