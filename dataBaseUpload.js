@@ -97,6 +97,7 @@ class UploadForm {
   
   
  async upload(){
+   alert(db);
     let id = this.idInput.value;
     if (id.length < 1) {
       alert("Empty unit Id" + id);
