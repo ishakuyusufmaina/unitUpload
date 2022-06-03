@@ -136,7 +136,7 @@ class UploadForm {
     eval("unit = " + this.unitInput.textContent);
    alert(unit.title);
    try {
-     let ref = doc(db, "html", id);
+     let ref = doc(db, "html/" + id);
       await setDoc(ref, unit);
       this.uploadStatus.innerHTML = "Successfully uploaded as:";
       this.uploadStatus.style.color = "green";
