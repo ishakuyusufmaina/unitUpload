@@ -138,7 +138,9 @@ class UploadForm {
    try {
      let ref = doc(db, "html/" + id);
       await setDoc(ref, unit);
-      this.uploadStatus.innerHTML = "Successfully uploaded as:";
+    let user = await getDoc(ref);
+    user = user.exists();
+      this.uploadStatus.innerHTML = "Successfully uploaded as: " + user;
       this.uploadStatus.style.color = "green";
     } catch(e){
       this.uploadStatus.innerHTML = "Error: " + e.toString();
