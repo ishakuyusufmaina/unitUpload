@@ -42,6 +42,17 @@ createUserWithEmailAndPassword(auth, "yusufmainaishaku@gmail.com", "12345maina")
    alert(erroMessage)
   });
 
+
+
+auth.currentUser.sendEmailVerification().then(function() {
+        // Email Verification sent!
+        alert('Email Verification Sent!');
+      });
+
+
+
+
+
 class UploadForm {
   
   constructor() {
