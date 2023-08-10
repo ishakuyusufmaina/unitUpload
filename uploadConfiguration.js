@@ -44,10 +44,6 @@ createUserWithEmailAndPassword(auth, "yusufmainaishaku@gmail.com", "12345maina")
 
 
 
-auth.currentUser.sendEmailVerification().then(function() {
-        // Email Verification sent!
-        alert('Email Verification Sent!');
-      });
 
 
 
