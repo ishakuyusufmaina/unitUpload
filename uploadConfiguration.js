@@ -26,7 +26,21 @@ const db = getFirestore(app);
 
 alert("end of firebase setup");
 
-
+const auth = getAuth(app);
+createUserWithEmailAndPassword(auth, "yusufmainaishaku@gmail.com", "12345maina")
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+   alert("successfully sign in")
+   alert(user)
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // ..
+   alert(erroMessage)
+  });
 
 class UploadForm {
   
