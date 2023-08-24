@@ -4,6 +4,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js";
 import {getFirestore, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js";
 import {getAuth, createUserWithEmailAndPassword} from "https:/www.gstatic.com/firebasejs/9.8.1/firebase-auth.js";
+import {getDatabase} from "https:/www.gstatic.com/firebasejs/9.8.1/firebase-database.js";
 // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -16,14 +17,15 @@ import {getAuth, createUserWithEmailAndPassword} from "https:/www.gstatic.com/fi
     storageBucket: "icodemy-b08eb.appspot.com",
     messagingSenderId: "1025768308242",
     appId: "1:1025768308242:web:c72fde01cb75ab6119a2cb",
-    measurementId: "G-02BCFHE7PQ"
+    measurementId: "G-02BCFHE7PQ",
+    databaseURL: "https://icodemy-b08eb-default-rtdb.firebaseio.com/"
   };
 
   // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const db = getFirestore(app);
-
+const rdb = getDatabase(app);
 alert("end of firebase setup");
 
 const auth = getAuth(app);
