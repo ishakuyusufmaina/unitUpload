@@ -27,6 +27,7 @@ const analytics = getAnalytics(app);
 const db = getFirestore(app);
 const rdb = getDatabase(app);
 alert("end of firebase setup");
+alert("rtd object: " + rdb);
 
 const auth = getAuth(app);
 createUserWithEmailAndPassword(auth, "yusufmainaishaku@gmail.com", "12345maina")
